@@ -1,2 +1,1 @@
-# tf_workshop_cys
-tf_workshop sample code
+# tf_module and basic code sample
