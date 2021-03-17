@@ -1,1 +1,1 @@
-# tf_module and basic code sample
+# terraform code sample(basic, module) - vpc, ec2
