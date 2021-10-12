@@ -5,7 +5,7 @@ variable "region" {
 }
 
 variable "name" {
-  default = "cys-terraform"
+  default = "tf-cys"
 }
 
 variable "vpc_id" {
@@ -28,12 +28,16 @@ variable "single_nat_gateway" {
   default = true
 }
 
+variable "one_nat_gateway_per_az" {
+  default = false
+}
+
 variable "enable_dns_hostnames" {
   default = true
 }
 
 variable "tags" {
   default = {
-    "ENV" = "cys-terraform"
+    "ENV" = "terraform-mgmt"
   }
 }

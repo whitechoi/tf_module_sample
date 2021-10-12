@@ -18,8 +18,8 @@ locals {
   zone_count = local.max_subnet_count < 1 ? 0 : var.single_route_table ? 1 : local.min_azs_count
   zone_index = {
     "a" = 0,
-    "b" = 1,
-    "c" = 2,
+    "c" = 1,
+    "b" = 2,
   }
 
   nat_gateway_count = var.enable_nat_gateway ? var.single_nat_gateway ? 1 : length(var.public_subnets) : 0

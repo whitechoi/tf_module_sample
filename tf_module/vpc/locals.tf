@@ -6,20 +6,21 @@ locals {
       name = "${var.name}-public-a"
       zone = "ap-northeast-2a"
       cidr = "10.10.1.0/24"
-      tags = { "Name" = "${var.name}-public-a" }
-    },
-    {
-      name = "${var.name}-public-b"
-      zone = "ap-northeast-2b"
-      cidr = "10.10.2.0/24"
-      tags = { "Name" = "${var.name}-public-b" }
+      tags = {}
     },
     {
       name = "${var.name}-public-c"
       zone = "ap-northeast-2c"
-      cidr = "10.10.3.0/24"
-      tags = { "Name" = "${var.name}-public-c" }
+      cidr = "10.10.2.0/24"
+      tags = {}
     },
+    {
+      name = "${var.name}-public-b"
+      zone = "ap-northeast-2b"
+      cidr = "10.10.3.0/24"
+      tags = {}
+    },
+    
   ]
 
   private_subnets = [
@@ -27,19 +28,19 @@ locals {
       name = "${var.name}-private-a"
       zone = "ap-northeast-2a"
       cidr = "10.10.4.0/24"
-      tags = { "Name" = "${var.name}-private-a" }
-    },
-    {
-      name = "${var.name}-private-b"
-      zone = "ap-northeast-2b"
-      cidr = "10.10.5.0/24"
-      tags = { "Name" = "${var.name}-private-b" }
+      tags = {}
     },
     {
       name = "${var.name}-private-c"
       zone = "ap-northeast-2c"
+      cidr = "10.10.5.0/24"
+      tags = {}
+    },
+    {
+      name = "${var.name}-private-b"
+      zone = "ap-northeast-2b"
       cidr = "10.10.6.0/24"
-      tags = { "Name" = "${var.name}-private-c" }
+      tags = {}
     },
   ]
 }
